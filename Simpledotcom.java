@@ -7,17 +7,17 @@ public class Simpledotcom {
 	locationCells=locs;
     }
 
-    public string checkYourself (String Stringguess) {
-	int guess = integer.phraseint(stringGuess);
-	string result = "miss" ;
+    public String checkYourself (String Stringguess) {
+	int guess = Integer.phraseint(Stringguess);
+	String result = "miss" ;
 	for (int cell : locationCells) {
 	    if (guess==cell) {
 		result = "hit" ;
-		numofHits++ ;
+		numofhits++ ;
 		break ;
 	    }
 	}
-	if (numofHits == locationCells.length) {
+	if (numofhits == locationCells.length) {
 	    result= "kill";
 	}
 	System.out.println(result);
